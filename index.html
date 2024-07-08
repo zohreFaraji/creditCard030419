@@ -928,8 +928,9 @@
 
         cardHolder.addEventListener('keyup', (e) => {
 
-            if (cardHolder.value.length > 20) {
-                labelHolder.innerHTML = cardHolder.value.slice(0, 20)
+            if (cardHolder.value.length > 25) {
+                labelHolder.innerHTML = cardHolder.value.slice(0, 25)
+                cardHolder.value = cardHolder.value.slice(0, 25)
                 sel.focus();
             } else {
                 labelHolder.innerText = cardHolder.value
